@@ -95,7 +95,7 @@
 			streamSaver.mitm = './serviceworker/index.html';
 {{  else }}
 			console.log("Gokapi is not being accessed through https, therefore an external serviceworker will be used");
-			streamSaver.mitm = 'https://forceu.github.io/Gokapi/internal/webserver/web/static/serviceworker/index.html';
+			streamSaver.mitm = 'https://bisudoh.github.io/Gokapi/internal/webserver/web/static/serviceworker/index.html';
 {{  end }}
 {{ if .EndToEndEncryption }}
 			const fileStream = streamSaver.createWriteStream(filename);
