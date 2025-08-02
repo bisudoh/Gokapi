@@ -3,11 +3,12 @@
 package main
 
 import (
-	"github.com/forceu/gokapi/internal/environment/flagparser"
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/test/testconfiguration"
 	"os"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/environment/flagparser"
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/test/testconfiguration"
 )
 
 func TestMain(m *testing.M) {
