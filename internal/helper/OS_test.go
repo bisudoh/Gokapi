@@ -2,9 +2,10 @@ package helper
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/test"
 	"os"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestIsInArray(t *testing.T) {

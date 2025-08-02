@@ -2,10 +2,11 @@ package processingstatus
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/storage/processingstatus/pstatusdb"
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/storage/processingstatus/pstatusdb"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestSetStatus(t *testing.T) {

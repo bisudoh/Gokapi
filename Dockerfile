@@ -10,7 +10,7 @@ RUN cd /compile && go mod download
   
 COPY . /compile  
 
-RUN cd /compile && go generate ./... && CGO_ENABLED=0 go build -ldflags="-s -w -X 'github.com/forceu/gokapi/internal/environment.IsDocker=true' -X 'github.com/forceu/gokapi/internal/environment.Builder=Project Docker File' -X 'github.com/forceu/gokapi/internal/environment.BuildTime=$(date)'" -o /compile/gokapi github.com/forceu/gokapi/cmd/gokapi
+RUN cd /compile && go generate ./... && CGO_ENABLED=0 go build -ldflags="-s -w -X 'github.com/bisudoh/gokapi/internal/environment.IsDocker=true' -X 'github.com/bisudoh/gokapi/internal/environment.Builder=Project Docker File' -X 'github.com/bisudoh/gokapi/internal/environment.BuildTime=$(date)'" -o /compile/gokapi github.com/bisudoh/gokapi/cmd/gokapi
 
 FROM alpine:3.19
 

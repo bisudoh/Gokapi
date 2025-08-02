@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "Gokapi",
-    "description": "[https://github.com/Forceu/Gokapi](https://github.com/Forceu/Gokapi)\n",
+    "description": "[https://github.com/Bisudoh/Gokapi](https://github.com/Bisudoh/Gokapi)\n",
     "version": "1.0"
   },
   "servers": [

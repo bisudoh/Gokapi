@@ -2,8 +2,9 @@ package models
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestToJsonResult(t *testing.T) {

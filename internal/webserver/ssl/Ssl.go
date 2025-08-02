@@ -10,8 +10,6 @@ import (
 	"encoding/hex"
 	"encoding/pem"
 	"fmt"
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/helper"
 	"io"
 	"math"
 	"math/big"
@@ -20,6 +18,9 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/helper"
 )
 
 var configDir string

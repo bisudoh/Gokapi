@@ -20,11 +20,11 @@ Docker
 To download, run the following command:
 ::
 
-  docker pull docker.io/f0rc3/gokapi:latest
+  docker pull docker.io/sudohash/gokapi:latest
 
 If you want to install the unstable version, use ``latest-dev`` instead of ``latest``
 
-If you don't want to download the prebuilt image, you can find the Dockerfile on the `Github project page <https://github.com/Forceu/gokapi>`_. 
+If you don't want to download the prebuilt image, you can find the Dockerfile on the `Github project page <https://github.com/Bisudoh/gokapi>`_. 
 
 
 
@@ -35,7 +35,7 @@ Native Deployment
 
 Stable version
 """""""""""""""""
-`Download the latest release <https://github.com/Forceu/gokapi/releases/latest>`_ and copy the executable into a new folder with write permissions. Select the executable according to your system. If you are using Windows, select ``gokapi-windows_amd64``, for Mac either ``gokapi-darwin_amd64`` or ``gokapi-darwin_arm64`` and for Linux the ``gokapi-linux_`` file matching your system.
+`Download the latest release <https://github.com/Bisudoh/gokapi/releases/latest>`_ and copy the executable into a new folder with write permissions. Select the executable according to your system. If you are using Windows, select ``gokapi-windows_amd64``, for Mac either ``gokapi-darwin_amd64`` or ``gokapi-darwin_arm64`` and for Linux the ``gokapi-linux_`` file matching your system.
 
 Unstable version
 """""""""""""""""
@@ -45,7 +45,7 @@ Only recommended if you have experience with the command line. Go 1.20+ needs to
 Create a new folder and in this folder execute 
 ::
 
- git clone https://github.com/Forceu/Gokapi.git .
+ git clone https://github.com/Bisudoh/Gokapi.git .
  make
 
 This will compile the source code and create an executable from the latest code.
@@ -66,7 +66,7 @@ Docker
 
 To start the container, run the following command: ::
 
- docker run -v gokapi-data:/app/data -v gokapi-config:/app/config -p 127.0.0.1:53842:53842 -e TZ=UTC f0rc3/gokapi:latest
+ docker run -v gokapi-data:/app/data -v gokapi-config:/app/config -p 127.0.0.1:53842:53842 -e TZ=UTC sudohash/gokapi:latest
 
 With the argument ``-p 127.0.0.1:53842:53842`` the service will only be accessible from the machine it is running on. In most use-cases you will use a reverse proxy for SSL - if you want to make the service available to other computers in the network without a reverse proxy, replace the argument with ``-p 53842:53842``. Please note, unless you select SSL during the setup, the traffic will not be encrypted that way and data like passwords or transferred files can easily be read by third parties!
 
@@ -331,7 +331,7 @@ To change any settings set in the initial setup (e.g. your password or storage l
 
 If you are using Docker, shut down the running instance and create a new temporary container with the following command: ::
 
- docker run --rm -p 127.0.0.1:53842:53842 -v gokapi-data:/app/data -v gokapi-config:/app/config  f0rc3/gokapi:latest /app/run.sh --reconfigure
+ docker run --rm -p 127.0.0.1:53842:53842 -v gokapi-data:/app/data -v gokapi-config:/app/config  sudohash/gokapi:latest /app/run.sh --reconfigure
  
 .. note::
    After completing the setup, all users will be logged out

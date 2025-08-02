@@ -1,16 +1,17 @@
 package sse
 
 import (
-	"github.com/forceu/gokapi/internal/configuration"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/test/testconfiguration"
 	"io"
 	"net/http"
 	"net/http/httptest"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/configuration"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/test/testconfiguration"
 )
 
 func TestMain(m *testing.M) {

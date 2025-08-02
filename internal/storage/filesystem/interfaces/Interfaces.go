@@ -1,8 +1,9 @@
 package interfaces
 
 import (
-	"github.com/forceu/gokapi/internal/models"
 	"os"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 // DriverLocal is returned as a name for the Local Storage driver

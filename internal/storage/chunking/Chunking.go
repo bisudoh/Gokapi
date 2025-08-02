@@ -2,8 +2,6 @@ package chunking
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/configuration"
-	"github.com/forceu/gokapi/internal/helper"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -12,6 +10,9 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/configuration"
+	"github.com/bisudoh/gokapi/internal/helper"
 )
 
 // ChunkInfo contains info about the current chunk

@@ -3,10 +3,11 @@ package flagparser
 import (
 	"bytes"
 	"flag"
-	"github.com/forceu/gokapi/internal/test"
 	"io"
 	"os"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestParseFlags(t *testing.T) {

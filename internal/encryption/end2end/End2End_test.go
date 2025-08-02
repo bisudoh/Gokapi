@@ -1,11 +1,12 @@
 package end2end
 
 import (
-	"github.com/forceu/gokapi/internal/encryption"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
 	"reflect"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/encryption"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestEncrypting(t *testing.T) {

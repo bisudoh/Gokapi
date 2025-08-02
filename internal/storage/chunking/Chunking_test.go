@@ -4,18 +4,19 @@ import (
 	"bytes"
 	"crypto/sha1"
 	"encoding/hex"
-	"github.com/forceu/gokapi/internal/configuration"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/test/testconfiguration"
-	"github.com/juju/ratelimit"
-	"golang.org/x/sync/errgroup"
 	"mime/multipart"
 	"net/textproto"
 	"net/url"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/configuration"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/test/testconfiguration"
+	"github.com/juju/ratelimit"
+	"golang.org/x/sync/errgroup"
 )
 
 func TestMain(m *testing.M) {

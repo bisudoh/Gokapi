@@ -3,15 +3,16 @@
 package sqlite
 
 import (
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
 	"math"
 	"os"
 	"slices"
 	"sync"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 var config = models.DbConnection{

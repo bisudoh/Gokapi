@@ -3,12 +3,13 @@ package webserver
 import (
 	"bufio"
 	"fmt"
-	"github.com/NYTimes/gziphandler"
-	"github.com/forceu/gokapi/internal/helper"
 	"net/http"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/NYTimes/gziphandler"
+	"github.com/bisudoh/gokapi/internal/helper"
 )
 
 const pathCustomFolder = "custom/"

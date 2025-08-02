@@ -5,12 +5,13 @@ package aws
 import (
 	"bytes"
 	"errors"
-	"github.com/forceu/gokapi/internal/models"
 	"io"
 	"net/http"
 	"os"
 	"strconv"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 var uploadedFiles []models.File

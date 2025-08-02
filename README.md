@@ -1,16 +1,16 @@
 # Gokapi
 
 [![Documentation Status](https://readthedocs.org/projects/gokapi/badge/?version=latest)](https://gokapi.readthedocs.io/en/stable/?badge=stable)
-[![Go Report Card](https://goreportcard.com/badge/github.com/forceu/gokapi)](https://goreportcard.com/report/github.com/forceu/gokapi)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bisudoh/gokapi)](https://goreportcard.com/report/github.com/bisudoh/gokapi)
 [![Coverage](https://img.shields.io/badge/Go%20Coverage-83%25-brightgreen.svg?longCache=true&style=flat)](https://github.com/jpoles1/gopherbadger)
-[![Docker Pulls](https://img.shields.io/docker/pulls/f0rc3/gokapi.svg)](https://hub.docker.com/r/f0rc3/gokapi/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/sudohash/gokapi.svg)](https://hub.docker.com/r/sudohash/gokapi/)
 
 **Gokapi** is a simple, self-hosted file sharing server with automatic expiration and encryption support — ideal for teams or individuals who want privacy, control, and no clutter.
 
 ### Available for:
 
 - **Bare Metal** (Linux/macOS/Windows)
-- **Docker**: [View on Docker Hub](https://hub.docker.com/r/f0rc3/gokapi)
+- **Docker**: [View on Docker Hub](https://hub.docker.com/r/sudohash/gokapi)
 
 ## Features
 
@@ -45,8 +45,8 @@
 
 **Download Link**
 
-<a href="https://github.com/Forceu/Gokapi/assets/1593467/d26d0642-4f85-47f9-ae69-50c3b8bc7717" target="_blank">
-  <img src="https://github.com/Forceu/Gokapi/assets/1593467/d26d0642-4f85-47f9-ae69-50c3b8bc7717" width="300" />
+<a href="https://github.com/Bisudoh/Gokapi/assets/1593467/d26d0642-4f85-47f9-ae69-50c3b8bc7717" target="_blank">
+  <img src="https://github.com/Bisudoh/Gokapi/assets/1593467/d26d0642-4f85-47f9-ae69-50c3b8bc7717" width="300" />
 </a>
 
 
@@ -67,8 +67,8 @@ You can deploy Gokapi in seconds using Docker or directly on your system.
 This project is licensed under the AGPL3 - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Contributors
-<a href="https://github.com/forceu/gokapi/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=forceu/gokapi" />
+<a href="https://github.com/bisudoh/gokapi/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=bisudoh/gokapi" />
 </a>
 
 

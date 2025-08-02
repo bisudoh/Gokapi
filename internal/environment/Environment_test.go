@@ -1,9 +1,10 @@
 package environment
 
 import (
-	"github.com/forceu/gokapi/internal/test"
 	"os"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 var returnCode = 0

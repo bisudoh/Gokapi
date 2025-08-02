@@ -1,11 +1,12 @@
 package downloadstatus
 
 import (
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 var testFile models.File

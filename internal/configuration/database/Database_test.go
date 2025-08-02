@@ -1,15 +1,16 @@
 package database
 
 import (
-	"github.com/alicebob/miniredis/v2"
-	"github.com/forceu/gokapi/internal/configuration/database/dbabstraction"
-	"github.com/forceu/gokapi/internal/configuration/database/dbcache"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
 	"log"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/alicebob/miniredis/v2"
+	"github.com/bisudoh/gokapi/internal/configuration/database/dbabstraction"
+	"github.com/bisudoh/gokapi/internal/configuration/database/dbcache"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 var configSqlite = models.DbConnection{

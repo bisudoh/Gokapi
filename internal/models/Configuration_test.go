@@ -1,9 +1,10 @@
 package models
 
 import (
-	"github.com/forceu/gokapi/internal/test"
 	"strings"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 var testConfig = Configuration{

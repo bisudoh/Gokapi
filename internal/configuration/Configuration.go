@@ -11,17 +11,18 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/configuration/cloudconfig"
-	"github.com/forceu/gokapi/internal/configuration/configupgrade"
-	"github.com/forceu/gokapi/internal/configuration/database"
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/logging"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/storage/filesystem"
 	"io"
 	"os"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/configuration/cloudconfig"
+	"github.com/bisudoh/gokapi/internal/configuration/configupgrade"
+	"github.com/bisudoh/gokapi/internal/configuration/database"
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/logging"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/storage/filesystem"
 )
 
 // MinLengthPassword is the required length of admin password in characters

@@ -1,16 +1,17 @@
 package fileupload
 
 import (
-	"github.com/forceu/gokapi/internal/configuration"
-	"github.com/forceu/gokapi/internal/configuration/database"
-	"github.com/forceu/gokapi/internal/logging"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/storage"
-	"github.com/forceu/gokapi/internal/storage/chunking"
 	"io"
 	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/configuration"
+	"github.com/bisudoh/gokapi/internal/configuration/database"
+	"github.com/bisudoh/gokapi/internal/logging"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/storage"
+	"github.com/bisudoh/gokapi/internal/storage/chunking"
 )
 
 // ProcessCompleteFile processes a file upload request

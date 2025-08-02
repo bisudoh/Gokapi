@@ -6,10 +6,12 @@ import (
 	"encoding/gob"
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
 	"os"
 	"path/filepath"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
+
 	// Required for sqlite driver
 	_ "modernc.org/sqlite"
 )

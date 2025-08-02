@@ -5,8 +5,9 @@ import (
 	"database/sql"
 	"encoding/gob"
 	"errors"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 type schemaMetaData struct {

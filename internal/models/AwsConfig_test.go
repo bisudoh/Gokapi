@@ -1,8 +1,9 @@
 package models
 
 import (
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestIsAwsProvided(t *testing.T) {

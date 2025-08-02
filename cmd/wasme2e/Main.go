@@ -7,16 +7,17 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
-	"github.com/forceu/gokapi/internal/encryption"
-	"github.com/forceu/gokapi/internal/encryption/end2end"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/secure-io/sio-go"
 	"io"
 	"mime/multipart"
 	"net/http"
 	"strconv"
 	"sync"
 	"syscall/js"
+
+	"github.com/bisudoh/gokapi/internal/encryption"
+	"github.com/bisudoh/gokapi/internal/encryption/end2end"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/secure-io/sio-go"
 )
 
 var fileInfo models.E2EInfoPlainText

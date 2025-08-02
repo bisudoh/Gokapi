@@ -25,7 +25,7 @@ Docker
 Pass the variable with the ``-e`` argument. Example for setting the port in use to *12345* and the chunk size to *60MB*:
 ::
 
- docker run -it -e GOKAPI_PORT=12345 -e GOKAPI_CHUNK_SIZE_MB=60 f0rc3/gokapi:latest
+ docker run -it -e GOKAPI_PORT=12345 -e GOKAPI_CHUNK_SIZE_MB=60 sudohash/gokapi:latest
 
 
 Native Deployment
@@ -147,7 +147,7 @@ all existing data, except for user sessions, will be transferred to the new data
 For Docker users, the command is:
 ::
 
- docker run --rm -v gokapi-data:/app/data f0rc3/gokapi:latest /app/run.sh [old Database URL] [new Database URL]
+ docker run --rm -v gokapi-data:/app/data sudohash/gokapi:latest /app/run.sh [old Database URL] [new Database URL]
 
 
 .. _databaseUrl:
@@ -346,7 +346,7 @@ If you are using internal username/password authentication, run the binary with 
 
 If you are using a Docker image, this has to be done by starting a container with the entrypoint ``/app/run.sh``, for example: ::
 
- docker run --rm -v gokapi-data:/app/data -v gokapi-config:/app/config  f0rc3/gokapi:latest /app/run.sh --deployment-password newPassword
+ docker run --rm -v gokapi-data:/app/data -v gokapi-config:/app/config  sudohash/gokapi:latest /app/run.sh --deployment-password newPassword
 
 
 ********************************

@@ -14,7 +14,7 @@ v2.0.1 (2025-06-08)
 Changelog
 """""""""
 
-* Fixed uploads failing for files with non-ASCII filenames `#269 <https://github.com/Forceu/Gokapi/issues/269>`__ 
+* Fixed uploads failing for files with non-ASCII filenames `#269 <https://github.com/Bisudoh/Gokapi/issues/269>`__ 
 * Fixed API documentation for API call ``/chunk/complete``
 * Fixed rare edge case, where a file with a cancelled deletion was still deleted
 * Filenames can now be base64-encoded in API call ``/chunk/complete``
@@ -24,9 +24,9 @@ Changelog
 Upgrading
 """""""""
 
-If you are upgrading from an older version than v2.0.0, please make sure to read the `v.2.0.0 upgrade notes <https://github.com/Forceu/Gokapi/releases/tag/v2.0.0>`__ first.
+If you are upgrading from an older version than v2.0.0, please make sure to read the `v.2.0.0 upgrade notes <https://github.com/Bisudoh/Gokapi/releases/tag/v2.0.0>`__ first.
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v2.0.0...v2.0.1
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v2.0.0...v2.0.1
 
 
 v2.0.0 (2025-05-31)
@@ -41,7 +41,7 @@ This release adds user management and granular permission control. Some breaking
 Security
 """"""""
 
-This releases fixes two XSS vulnerabilities (`CVE-2025-48494 <https://github.com/Forceu/Gokapi/security/advisories/GHSA-95rc-wc32-gm53>`__ and `CVE-2025-48495 <https://github.com/Forceu/Gokapi/security/advisories/GHSA-4xg4-54hm-9j77>`__). The vulnerabilities let authorised users execute Javascript with passive interaction - if you are using Gokapi as a single user, this does not impact you, otherwise we recommend updating your instance to v2.0.0.
+This releases fixes two XSS vulnerabilities (`CVE-2025-48494 <https://github.com/Bisudoh/Gokapi/security/advisories/GHSA-95rc-wc32-gm53>`__ and `CVE-2025-48495 <https://github.com/Bisudoh/Gokapi/security/advisories/GHSA-4xg4-54hm-9j77>`__). The vulnerabilities let authorised users execute Javascript with passive interaction - if you are using Gokapi as a single user, this does not impact you, otherwise we recommend updating your instance to v2.0.0.
 
 Changelog
 """""""""
@@ -54,12 +54,12 @@ Changelog
 * Added experimental hotlinking for videos with env var ``GOKAPI_ENABLE_HOTLINK_VIDEOS``
 * Added a share button for mobile users and a button to share a URL via email
 * Improved the UI
-* Changed ``GOKAPI_LENGTH_ID``  to be non-permanent, added ``GOKAPI_LENGTH_HOTLINK_ID`` to change hotlink ID length `#251 <https://github.com/Forceu/Gokapi/issues/251>`__
-* Changed hotlink URLs to be shorter (`#253 <https://github.com/Forceu/Gokapi/issues/253>`__) @lenisko 
-* Changed headers for cache control to stop unwanted caching with cloudflare `#209 <https://github.com/Forceu/Gokapi/issues/209>`__
-* Fixed email scope not being submitted `#234 <https://github.com/Forceu/Gokapi/issues/234>`__, fix always being redirected after successful OIDC login
-* Fixed DuplicateFile setting hotlink on wrong file object (`#246 <https://github.com/Forceu/Gokapi/issues/246>`__)
-* Fixed bug where picture files where not uploaded at all when encryption and cloud storage was active as well as ``SaveToLocal`` `#247 <https://github.com/Forceu/Gokapi/issues/247>`__
+* Changed ``GOKAPI_LENGTH_ID``  to be non-permanent, added ``GOKAPI_LENGTH_HOTLINK_ID`` to change hotlink ID length `#251 <https://github.com/Bisudoh/Gokapi/issues/251>`__
+* Changed hotlink URLs to be shorter (`#253 <https://github.com/Bisudoh/Gokapi/issues/253>`__) @lenisko 
+* Changed headers for cache control to stop unwanted caching with cloudflare `#209 <https://github.com/Bisudoh/Gokapi/issues/209>`__
+* Fixed email scope not being submitted `#234 <https://github.com/Bisudoh/Gokapi/issues/234>`__, fix always being redirected after successful OIDC login
+* Fixed DuplicateFile setting hotlink on wrong file object (`#246 <https://github.com/Bisudoh/Gokapi/issues/246>`__)
+* Fixed bug where picture files where not uploaded at all when encryption and cloud storage was active as well as ``SaveToLocal`` `#247 <https://github.com/Bisudoh/Gokapi/issues/247>`__
 * Many other fixes and minor improvements @nilicule 
 
 Upgrading
@@ -126,7 +126,7 @@ Since v1.9 there have been a lot of changes to the API, please take note if you 
 
 💙 **A huge thank you** to all our users, bug reporters, and contributors who made this release possible!
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.6...v2.0.0
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.6...v2.0.0
 
 
 v1.9.6 (2024-12-18)
@@ -135,15 +135,15 @@ v1.9.6 (2024-12-18)
 Changelog
 """""""""
 
-* Add API call and GUI option to replace content of files (can be disabled with the env variable ``GOKAPI_DISABLE_REPLACE``) `#128 <https://github.com/Forceu/Gokapi/issues/128>`__
+* Add API call and GUI option to replace content of files (can be disabled with the env variable ``GOKAPI_DISABLE_REPLACE``) `#128 <https://github.com/Bisudoh/Gokapi/issues/128>`__
 * Display error if encrypted download fails due to invalid SSL or CORS
 * Better error handling for AWS setup check
 * Fixed upload defaults being deleted when resetting e2e key
-* Update download count in real time `#206 <https://github.com/Forceu/Gokapi/issues/206>`__
+* Update download count in real time `#206 <https://github.com/Bisudoh/Gokapi/issues/206>`__
 * Fixed race condition that could lead to crash
 * Change download count atomically to prevent race condition
 * Renamed "Access Restriction" to indicate that authentication is disababled
-* Make upload non blocking (`#224 <https://github.com/Forceu/Gokapi/issues/224>`__), to prevent timouts after uploading large files
+* Make upload non blocking (`#224 <https://github.com/Bisudoh/Gokapi/issues/224>`__), to prevent timouts after uploading large files
 * Added API call ``/files/list/{id}``
 * Better handling for E2E errors
 * Other minor changes
@@ -153,7 +153,7 @@ Breaking Changes
 
 * **API:** API now returns 404 on invalid file IDs
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.5...v1.9.6
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.5...v1.9.6
 
 
 v1.9.5 (2024-12-08)
@@ -162,9 +162,9 @@ v1.9.5 (2024-12-08)
 Changelog
 """""""""
 
-* Fixed a crash caused by an incorrectly upgraded database version `#215 <https://github.com/Forceu/Gokapi/issues/215>`__, `#216 <https://github.com/Forceu/Gokapi/issues/216>`__
+* Fixed a crash caused by an incorrectly upgraded database version `#215 <https://github.com/Bisudoh/Gokapi/issues/215>`__, `#216 <https://github.com/Bisudoh/Gokapi/issues/216>`__
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.4...v1.9.5
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.4...v1.9.5
 
 
 v1.9.3 (2024-12-07)
@@ -173,9 +173,9 @@ v1.9.3 (2024-12-07)
 Changelog
 """""""""
 
-* Fixed editing of API permissions or existing files not working, when using external authentication `#210 <https://github.com/Forceu/Gokapi/issues/210>`__ 
-* Fixed not showing an error message if file is larger than allowed file size `#213 <https://github.com/Forceu/Gokapi/issues/213>`__
-* Upload defaults are now saved locally instead of server-side `#196 <https://github.com/Forceu/Gokapi/issues/196>`__
+* Fixed editing of API permissions or existing files not working, when using external authentication `#210 <https://github.com/Bisudoh/Gokapi/issues/210>`__ 
+* Fixed not showing an error message if file is larger than allowed file size `#213 <https://github.com/Bisudoh/Gokapi/issues/213>`__
+* Upload defaults are now saved locally instead of server-side `#196 <https://github.com/Bisudoh/Gokapi/issues/196>`__
 * Internal API key is now used for all API actions on the GUI
 * Added API endpoint ``/auth/delete`` to delete API key
 * Added parameter in ``/auth/create`` to include basic permissions
@@ -189,7 +189,7 @@ Breaking Changes
 * **API:** When not adding a parameter for maximum downloads or expiry, the default values of 1 download or 14 days are used instead of previous used values for calls ``/files/add`` and ``/chunk/complete``
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.2...v1.9.3
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.2...v1.9.3
 
 
 v1.9.2 (2024-09-30)
@@ -200,15 +200,15 @@ Changelog
 
 * Added preview meta-data, enabling preview for services like WhatsApp
 * Added hotlink support for avif and apng format
-* Fixed headers not set when proxying S3 storage, resulting in incorrect filename and not forcing download `#199 <https://github.com/Forceu/Gokapi/issues/199>`__
+* Fixed headers not set when proxying S3 storage, resulting in incorrect filename and not forcing download `#199 <https://github.com/Bisudoh/Gokapi/issues/199>`__
 
 Upgrading
 """""""""
 
-* If running an older version than 1.9.2 please check the  `1.9.1 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.9.1>`__ for upgrading and breaking changes
+* If running an older version than 1.9.2 please check the  `1.9.1 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.9.1>`__ for upgrading and breaking changes
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.1...v1.9.2
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.1...v1.9.2
 
 
 v1.9.1 (2024-07-31)
@@ -217,10 +217,10 @@ v1.9.1 (2024-07-31)
 Changelog
 """""""""
 
-* Fixed processing/uploading status not showing after upload `#193 <https://github.com/Forceu/Gokapi/issues/193>`__ 
-* Fixed crash when OIDC returns nil for groups `#198 <https://github.com/Forceu/Gokapi/issues/198>`__
-* Fixed crash after running setup and changing encryption `#197 <https://github.com/Forceu/Gokapi/issues/197>`__ 
-* Changed versioning of css/js files to prevent caching of old versions `#195 <https://github.com/Forceu/Gokapi/issues/195>`__
+* Fixed processing/uploading status not showing after upload `#193 <https://github.com/Bisudoh/Gokapi/issues/193>`__ 
+* Fixed crash when OIDC returns nil for groups `#198 <https://github.com/Bisudoh/Gokapi/issues/198>`__
+* Fixed crash after running setup and changing encryption `#197 <https://github.com/Bisudoh/Gokapi/issues/197>`__ 
+* Changed versioning of css/js files to prevent caching of old versions `#195 <https://github.com/Bisudoh/Gokapi/issues/195>`__
 * Other minor changes
 
 Breaking changes
@@ -231,10 +231,10 @@ If you are using a custom theme, make sure that you change the CSS and JS filena
 Upgrading
 """""""""
 
-* If running an older version than 1.9.0, please check the  `1.9.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.9.0>`__ for upgrading and breaking changes
+* If running an older version than 1.9.0, please check the  `1.9.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.9.0>`__ for upgrading and breaking changes
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.9.0...v1.9.1
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.9.0...v1.9.1
 
 
 v1.9.0 (2024-07-15)
@@ -243,12 +243,12 @@ v1.9.0 (2024-07-15)
 Changelog
 """""""""
 
-* Fixed upload speeds being very low in some cases `#162 <https://github.com/Forceu/Gokapi/issues/162>`__
-* Fixed Docker image having the incorrect timezone `#169 <https://github.com/Forceu/Gokapi/issues/169>`__
+* Fixed upload speeds being very low in some cases `#162 <https://github.com/Bisudoh/Gokapi/issues/162>`__
+* Fixed Docker image having the incorrect timezone `#169 <https://github.com/Bisudoh/Gokapi/issues/169>`__
 * Added Redis support. If you want to use Redis instead of SQLite, re-run the setup to change your database type. Refer to the `documentation <https://gokapi.readthedocs.io/en/stable/advanced.html#databases>`__ on how to migrate your data to a different database
 * Database location can now be changed with the setup
 * Fixed QR code not having decryption key when end-to-end encryption was enabled 
-* Added option to display filenames in URL `#171 <https://github.com/Forceu/Gokapi/issues/171>`__
+* Added option to display filenames in URL `#171 <https://github.com/Bisudoh/Gokapi/issues/171>`__
 * Added makefile for development
 * Replaced SSE library with more efficient code
 * Fixed ``go generate`` not working on Windows, thanks @Kwonunn 
@@ -266,10 +266,10 @@ Upgrading
 """""""""
 
 * Configuration file needs to be writable
-* If running an older version than 1.8.0, please upgrade to 1.8.4 first and check the  `1.8.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
+* If running an older version than 1.8.0, please upgrade to 1.8.4 first and check the  `1.8.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.8.4...v1.9.0
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.8.4...v1.9.0
 
 
 v1.8.4 (2024-05-29)
@@ -287,10 +287,10 @@ Upgrading
 * You might need to change permissions on the docker volumes, if you want the content to be readable by the host user. (Only applicable if you were running 1.8.3 before)
 * **Important**: If you have used the old Keycloak example for configuration, please make sure that it is configure properly, as with the old example unauthorised access might have been possible! `Documentation: Creating scopes for groups <https://gokapi.readthedocs.io/en/stable/examples.html#addding-a-scope-for-exposing-groups-optional>`__
 
-If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
+If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.8.3...v1.8.4
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.8.3...v1.8.4
 
 
 v1.8.3 (2024-05-27)
@@ -313,10 +313,10 @@ Changelog
 Upgrading
 """""""""
 
-If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
+If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.8.2...v1.8.3
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.8.2...v1.8.3
 
 
 v1.8.2 (2024-04-20)
@@ -334,9 +334,9 @@ Changelog
 Upgrading
 """""""""
 
-If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
+If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.8.1...v1.8.2
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.8.1...v1.8.2
 
 
 v1.8.1 (2024-02-07)
@@ -347,14 +347,14 @@ Changelog
 
 * Reworked OIDC authentication, added support for Groups, use consent instead of select_account, better error handling
 * Added wildcard support for OIDC groups and users
-* Fixed crash on client timeout `#125 <https://github.com/Forceu/Gokapi/issues/125>`__
+* Fixed crash on client timeout `#125 <https://github.com/Bisudoh/Gokapi/issues/125>`__
 * Added /auth/create API endpoint for creating API keys
 * Minor changes and fixes
 
 Upgrading
 """""""""
 
-If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Forceu/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
+If you are running a version <1.8.0, please see the `1.8.0 changelog <https://github.com/Bisudoh/Gokapi/releases/tag/v1.8.0>`__ for upgrading and breaking changes
 
 
 
@@ -374,7 +374,7 @@ Changelog
 * Added permission model for API tokens
 * Added ``/auth/modify`` and ``/files/modify API`` endpoint
 * Fixed "Powered by Gokapi" URL not clickable
-* Fixed the ASCII logo `#108 <https://github.com/Forceu/Gokapi/issues/108>`__ Thanks to @Kwonunn 
+* Fixed the ASCII logo `#108 <https://github.com/Bisudoh/Gokapi/issues/108>`__ Thanks to @Kwonunn 
 * Improved UI
 * Fixed minor bugs
 * Updated dependencies
@@ -407,7 +407,7 @@ Changelog
 * Replaced expiry image with dynamic SVG
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.7.1...v1.7.2
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.7.1...v1.7.2
 
 
 v1.7.1 (2023-04-14)
@@ -415,19 +415,19 @@ v1.7.1 (2023-04-14)
 
 Changelog
 """""""""
-* Fixed Gokapi not able to upload when running on a Windows system `#95 <https://github.com/Forceu/Gokapi/issues/95>`__ 
+* Fixed Gokapi not able to upload when running on a Windows system `#95 <https://github.com/Bisudoh/Gokapi/issues/95>`__ 
 * Improved Upload UI
-* Added healthcheck for docker by @Jisagi in https://github.com/Forceu/Gokapi/pull/89
-* Fixed upload counter not updating after upload `#92 <https://github.com/Forceu/Gokapi/issues/92>`__ 
+* Added healthcheck for docker by @Jisagi in https://github.com/Bisudoh/Gokapi/pull/89
+* Fixed upload counter not updating after upload `#92 <https://github.com/Bisudoh/Gokapi/issues/92>`__ 
 * Fixed hotlink generation on files that required client-side decryption
 * Replaced go:generate code with native Go
 * Min Go version now 1.20
 * Updated dependencies
 * A lot of refactoring, minor changes
-* Fixed background not loading in 1.7.0 (unpublished release) `#101 <https://github.com/Forceu/Gokapi/issues/101>`__ 
+* Fixed background not loading in 1.7.0 (unpublished release) `#101 <https://github.com/Bisudoh/Gokapi/issues/101>`__ 
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.6.2...v1.7.1
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.6.2...v1.7.1
 
 
 v1.6.2 (2023-02-13)
@@ -436,13 +436,13 @@ v1.6.2 (2023-02-13)
 Changelog
 """""""""
 
-* Fixed timeout if a large file was uploaded to the cloud `#81 <https://github.com/Forceu/Gokapi/issues/81>`__
+* Fixed timeout if a large file was uploaded to the cloud `#81 <https://github.com/Bisudoh/Gokapi/issues/81>`__
 * File overview is now sortable and searchable
 * Added log viewer
 * Updated Go to 1.20
 * Other minor changes and fixes
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.6.1..v1.6.2
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.6.1..v1.6.2
 
 
 v1.6.1 (2022-08-17)
@@ -453,7 +453,7 @@ Changelog
 
 * Fixed bug that prevented running setup with docker
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.6.0...v1.6.1
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.6.0...v1.6.1
 
 
 v1.6.0 (2022-08-17)
@@ -462,8 +462,8 @@ v1.6.0 (2022-08-17)
 Changelog
 """""""""
 
-* Use chunked uploads instead of single upload `#68 <https://github.com/Forceu/Gokapi/issues/68>`__
-* Add end-to-end encryption `#71 <https://github.com/Forceu/Gokapi/issues/71>`__
+* Use chunked uploads instead of single upload `#68 <https://github.com/Bisudoh/Gokapi/issues/68>`__
+* Add end-to-end encryption `#71 <https://github.com/Bisudoh/Gokapi/issues/71>`__
 * Fixed hotlink not being generated for uploads through API with unlimited storage time
 * Added arm64 to Docker latest image
 * Added API call to duplicate existing files
@@ -498,7 +498,7 @@ Upgrading
 
 Please report any issues you have with this release!
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.5.2...v1.6.0
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.5.2...v1.6.0
 
 
 v1.5.2 (2022-06-08)
@@ -520,7 +520,7 @@ Changelog
 * Fixed that two text files were created when pasting text
 * Fixed docker image in documentation @emanuelduss
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.5.1...v1.5.2
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.5.1...v1.5.2
 
 
 v1.5.1 (2022-03-10)
@@ -529,14 +529,14 @@ v1.5.1 (2022-03-10)
 Changelog
 """""""""
 
-* Fixed that selection of remote storage was not available during intitial setup `#50 <https://github.com/Forceu/Gokapi/issues/50>`__ 
+* Fixed that selection of remote storage was not available during intitial setup `#50 <https://github.com/Bisudoh/Gokapi/issues/50>`__ 
 * Fixed that "bind to localhost" could be selected on docker image during initial setup
 * Fixed that with Level 1 encryption remote files were encrypted as well
-* If Gokapi is hosted under a https URL, the serviceworker for remote decryption is now included, which fixes that Firefox users with restrictive settings could not download encrypted files from remote storage `#49 <https://github.com/Forceu/Gokapi/issues/49>`__ 
-* Design improvements by @mraif13 `#51 <https://github.com/Forceu/Gokapi/issues/51>`__
+* If Gokapi is hosted under a https URL, the serviceworker for remote decryption is now included, which fixes that Firefox users with restrictive settings could not download encrypted files from remote storage `#49 <https://github.com/Bisudoh/Gokapi/issues/49>`__ 
+* Design improvements by @mraif13 `#51 <https://github.com/Bisudoh/Gokapi/issues/51>`__
 
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.5.0...v1.5.1
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.5.0...v1.5.1
 
 
 v1.5.0 (2022-03-08)
@@ -563,7 +563,7 @@ Changelog
 
 Please report any issues you have with this release! Especially if you are using the full encryption mode with S3, we are very happy about any feedback.
 
-**Full Changelog**: https://github.com/Forceu/Gokapi/compare/v1.3.1...v1.5.0
+**Full Changelog**: https://github.com/Bisudoh/Gokapi/compare/v1.3.1...v1.5.0
 
 
 v1.3.1 (2021-07-03)

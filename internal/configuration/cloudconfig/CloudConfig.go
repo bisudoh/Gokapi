@@ -2,12 +2,13 @@ package cloudconfig
 
 import (
 	"fmt"
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
-	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"os"
+
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
+	"gopkg.in/yaml.v3"
 )
 
 // CloudConfig contains all configuration values / credentials for cloud storage

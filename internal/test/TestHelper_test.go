@@ -4,7 +4,6 @@ package test
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/helper"
 	"io"
 	"log"
 	"net/http"
@@ -12,6 +11,8 @@ import (
 	"os"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/helper"
 )
 
 var (

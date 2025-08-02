@@ -8,14 +8,15 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/secure-io/sio-go"
-	"golang.org/x/crypto/scrypt"
 	"io"
 	"log"
 	"os"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/secure-io/sio-go"
+	"golang.org/x/crypto/scrypt"
 )
 
 // NoEncryption means all files are stored in plaintext

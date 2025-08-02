@@ -3,13 +3,14 @@ package redis
 import (
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
-	redigo "github.com/gomodule/redigo/redis"
 	"os"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
+	redigo "github.com/gomodule/redigo/redis"
 )
 
 // DatabaseProvider contains the database instance

@@ -2,9 +2,10 @@ package dbabstraction
 
 import (
 	"fmt"
-	"github.com/forceu/gokapi/internal/configuration/database/provider/redis"
-	"github.com/forceu/gokapi/internal/configuration/database/provider/sqlite"
-	"github.com/forceu/gokapi/internal/models"
+
+	"github.com/bisudoh/gokapi/internal/configuration/database/provider/redis"
+	"github.com/bisudoh/gokapi/internal/configuration/database/provider/sqlite"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 const (

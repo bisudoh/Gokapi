@@ -3,12 +3,13 @@ package api
 import (
 	"encoding/base64"
 	"errors"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/storage"
-	"github.com/forceu/gokapi/internal/storage/chunking"
 	"net/http"
 	"strconv"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/storage"
+	"github.com/bisudoh/gokapi/internal/storage/chunking"
 )
 
 type apiRoute struct {

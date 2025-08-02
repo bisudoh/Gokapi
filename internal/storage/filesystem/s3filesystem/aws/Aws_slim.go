@@ -4,9 +4,10 @@ package aws
 
 import (
 	"errors"
-	"github.com/forceu/gokapi/internal/models"
 	"io"
 	"net/http"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 const errorString = "AWS not supported in this build"

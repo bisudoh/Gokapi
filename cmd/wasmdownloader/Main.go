@@ -8,10 +8,11 @@ package main
 import (
 	"encoding/base64"
 	"errors"
-	"github.com/forceu/gokapi/internal/encryption"
 	"io"
 	"net/http"
 	"syscall/js"
+
+	"github.com/bisudoh/gokapi/internal/encryption"
 )
 
 // Main routine that is called on startup

@@ -5,11 +5,12 @@ Manages the sessions for the admin user or to access password-protected files
 */
 
 import (
-	"github.com/forceu/gokapi/internal/configuration/database"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
 	"net/http"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/configuration/database"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 // If no login occurred during this time, the admin session will be deleted. Default 30 days

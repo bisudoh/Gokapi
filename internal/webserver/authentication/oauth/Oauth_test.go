@@ -1,9 +1,10 @@
 package oauth
 
 import (
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/webserver/authentication"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/webserver/authentication"
 )
 
 func TestSetCallbackCookie(t *testing.T) {

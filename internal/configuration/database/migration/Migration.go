@@ -2,10 +2,11 @@ package migration
 
 import (
 	"fmt"
-	"github.com/forceu/gokapi/internal/configuration/database"
-	"github.com/forceu/gokapi/internal/configuration/database/dbabstraction"
-	"github.com/forceu/gokapi/internal/environment/flagparser"
 	"os"
+
+	"github.com/bisudoh/gokapi/internal/configuration/database"
+	"github.com/bisudoh/gokapi/internal/configuration/database/dbabstraction"
+	"github.com/bisudoh/gokapi/internal/environment/flagparser"
 )
 
 // Do checks the passed flags for a migration and then executes it

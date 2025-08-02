@@ -3,12 +3,13 @@ package database
 import (
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/configuration/database/dbabstraction"
-	"github.com/forceu/gokapi/internal/configuration/database/dbcache"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
 	"net/url"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/configuration/database/dbabstraction"
+	"github.com/bisudoh/gokapi/internal/configuration/database/dbcache"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 var db dbabstraction.Database

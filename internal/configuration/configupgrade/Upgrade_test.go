@@ -1,12 +1,13 @@
 package configupgrade
 
 import (
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/test/testconfiguration"
 	"os"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/test/testconfiguration"
 )
 
 func TestMain(m *testing.M) {
@@ -20,7 +21,7 @@ var oldConfigFile = models.Configuration{
 	Authentication: models.AuthenticationConfig{},
 	Port:           "127.0.0.1:53844",
 	ServerUrl:      "https://gokapi.url/",
-	RedirectUrl:    "https://github.com/Forceu/Gokapi/",
+	RedirectUrl:    "https://github.com/Bisudoh/Gokapi/",
 }
 
 func TestUpgradeDb(t *testing.T) {

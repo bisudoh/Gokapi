@@ -1,10 +1,11 @@
 package downloadstatus
 
 import (
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
 	"sync"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 var statusMap = make(map[string]models.DownloadStatus)

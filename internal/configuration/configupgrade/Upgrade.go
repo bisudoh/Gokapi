@@ -3,11 +3,12 @@ package configupgrade
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/helper"
-	"github.com/forceu/gokapi/internal/models"
 	"os"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/helper"
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 // RequiresUpgradeV1ToV2 is an indicator for migrating the admin user to the database

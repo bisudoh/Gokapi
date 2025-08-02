@@ -1,11 +1,12 @@
 package filesystem
 
 import (
-	"github.com/forceu/gokapi/internal/models"
-	fileInterfaces "github.com/forceu/gokapi/internal/storage/filesystem/interfaces"
-	"github.com/forceu/gokapi/internal/storage/filesystem/s3filesystem/aws"
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/models"
+	fileInterfaces "github.com/bisudoh/gokapi/internal/storage/filesystem/interfaces"
+	"github.com/bisudoh/gokapi/internal/storage/filesystem/s3filesystem/aws"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestInit(t *testing.T) {

@@ -1,9 +1,10 @@
 package headers
 
 import (
-	"github.com/forceu/gokapi/internal/models"
 	"net/http"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 // Write sets headers to either display the file inline or to force download, the content type

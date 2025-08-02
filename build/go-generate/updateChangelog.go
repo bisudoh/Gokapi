@@ -86,7 +86,7 @@ func convertMarkdownLinksToReST(text string) string {
 func insertIssueUrl(text string) string {
 	// Regex to match Markdown links: [link text](url)
 	re := regexp.MustCompile(`#(\d+)`)
-	return re.ReplaceAllString(text, "`#$1 <https://github.com/Forceu/Gokapi/issues/$1>`__")
+	return re.ReplaceAllString(text, "`#$1 <https://github.com/Bisudoh/Gokapi/issues/$1>`__")
 }
 
 func insertMissingNewlineForSublist(text string) string {
@@ -146,7 +146,7 @@ func getSecret() string {
 }
 
 func loadGithubReleases(secret string) []githubRelease {
-	const url = "https://api.github.com/repos/Forceu/Gokapi/releases"
+	const url = "https://api.github.com/repos/Bisudoh/Gokapi/releases"
 
 	spaceClient := http.Client{
 		Timeout: time.Second * 20,

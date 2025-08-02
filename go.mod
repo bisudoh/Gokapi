@@ -1,4 +1,4 @@
-module github.com/forceu/gokapi
+module github.com/bisudoh/gokapi
 
 go 1.24.0
 

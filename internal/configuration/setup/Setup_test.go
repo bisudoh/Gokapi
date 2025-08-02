@@ -6,13 +6,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/forceu/gokapi/internal/configuration"
-	"github.com/forceu/gokapi/internal/configuration/cloudconfig"
-	"github.com/forceu/gokapi/internal/configuration/database"
-	"github.com/forceu/gokapi/internal/environment"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
-	"github.com/forceu/gokapi/internal/test/testconfiguration"
 	"log"
 	"net"
 	"net/http"
@@ -22,6 +15,14 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/configuration"
+	"github.com/bisudoh/gokapi/internal/configuration/cloudconfig"
+	"github.com/bisudoh/gokapi/internal/configuration/database"
+	"github.com/bisudoh/gokapi/internal/environment"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
+	"github.com/bisudoh/gokapi/internal/test/testconfiguration"
 )
 
 var jsonForms []jsonFormObject
@@ -161,7 +162,7 @@ func TestToConfiguration(t *testing.T) {
 	test.IsEqualString(t, output.Authentication.Username, "admin")
 	test.IsNotEqualString(t, authsettings.PasswordInternalAuth, "adminadmin")
 	test.IsNotEqualString(t, authsettings.PasswordInternalAuth, "")
-	test.IsEqualString(t, output.RedirectUrl, "https://github.com/Forceu/Gokapi/")
+	test.IsEqualString(t, output.RedirectUrl, "https://github.com/Bisudoh/Gokapi/")
 }
 
 func TestVerifyPortNumber(t *testing.T) {
@@ -401,7 +402,7 @@ func TestIntegration(t *testing.T) {
 	test.IsEqualBool(t, settings.UseSsl, false)
 	test.IsEqualBool(t, settings.SaveIp, false)
 	test.IsEqualString(t, settings.ServerUrl, "http://127.0.0.1:53842/")
-	test.IsEqualString(t, settings.RedirectUrl, "https://github.com/Forceu/Gokapi/")
+	test.IsEqualString(t, settings.RedirectUrl, "https://github.com/Bisudoh/Gokapi/")
 	cconfig, ok := cloudconfig.Load()
 	test.IsEqualBool(t, ok, true)
 	if os.Getenv("GOKAPI_AWS_BUCKET") == "" {
@@ -654,7 +655,7 @@ func createInputInternalAuth() setupValues {
 	values.IncludeFilename.Value = "1"
 	values.Port.Value = "53842"
 	values.ExtUrl.Value = "http://127.0.0.1:53842/"
-	values.RedirectUrl.Value = "https://github.com/Forceu/Gokapi/"
+	values.RedirectUrl.Value = "https://github.com/Bisudoh/Gokapi/"
 	values.AuthenticationMode.Value = "0"
 	values.AuthUsername.Value = "admin"
 	values.AuthPassword.Value = "adminadmin"

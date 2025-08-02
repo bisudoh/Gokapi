@@ -1,10 +1,11 @@
 package pstatusdb
 
 import (
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestSetStatus(t *testing.T) {

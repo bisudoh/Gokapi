@@ -1,8 +1,9 @@
 package helper
 
 import (
-	"github.com/forceu/gokapi/internal/test"
 	"testing"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestByteCountSI(t *testing.T) {

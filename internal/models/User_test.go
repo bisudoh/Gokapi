@@ -1,10 +1,11 @@
 package models
 
 import (
-	"github.com/forceu/gokapi/internal/test"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/test"
 )
 
 func TestUser_GetReadableDate(t *testing.T) {

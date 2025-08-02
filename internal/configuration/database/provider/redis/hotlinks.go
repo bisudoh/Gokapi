@@ -1,8 +1,9 @@
 package redis
 
 import (
-	"github.com/forceu/gokapi/internal/models"
 	"strings"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 const (

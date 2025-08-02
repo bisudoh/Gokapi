@@ -1,15 +1,16 @@
 package redis
 
 import (
-	"github.com/alicebob/miniredis/v2"
-	"github.com/forceu/gokapi/internal/models"
-	"github.com/forceu/gokapi/internal/test"
-	redigo "github.com/gomodule/redigo/redis"
 	"log"
 	"os"
 	"slices"
 	"testing"
 	"time"
+
+	"github.com/alicebob/miniredis/v2"
+	"github.com/bisudoh/gokapi/internal/models"
+	"github.com/bisudoh/gokapi/internal/test"
+	redigo "github.com/gomodule/redigo/redis"
 )
 
 var config = models.DbConnection{

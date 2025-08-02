@@ -1,9 +1,10 @@
 package pstatusdb
 
 import (
-	"github.com/forceu/gokapi/internal/models"
 	"sync"
 	"time"
+
+	"github.com/bisudoh/gokapi/internal/models"
 )
 
 var statusMap = make(map[string]models.UploadStatus)
